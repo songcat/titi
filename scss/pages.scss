@@ -84,13 +84,13 @@ header {
       margin-left: 5px;
     }
     a {
-      @include btnNav($violet, lighten( $violet, 10% ), 5px, 160px);
+      @include btnNav($violet, lighten($violet, 10%), 5px, 160px);
     }
   }
 }
 
 nav.menu a {
-  @include btnNav($grey, lighten( $grey, 10% ), 3px, 170px);
+  @include btnNav($grey, lighten($grey, 10%), 3px, 170px);
 }
 
 // slider

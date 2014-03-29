@@ -588,12 +588,16 @@ nav.menu ul li + li {
   padding: 0 10px;
 }
 #container .col {
-  display: inline-block;
+  float: left;
 }
 #container .col.cLeft {
   width: 42%;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 #container .col.cRight {
   width: 55%;
+}
+
+footer {
+  clear: both;
 }

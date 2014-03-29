@@ -471,7 +471,7 @@ html {
   background-attachment: fixed;
 }
 
-header ul a, nav a {
+header ul a, nav.menu a {
   transition: all 0.5s ease-in-out;
   text-align: center;
   display: block;
@@ -509,7 +509,7 @@ header ul a {
   border-bottom: 3px solid #b280e9;
 }
 
-nav a {
+nav.menu a {
   padding: 3px 0;
   width: 170px;
   background-color: #333333;

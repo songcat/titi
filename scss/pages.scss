@@ -89,7 +89,7 @@ header {
   }
 }
 
-nav a {
+nav.menu a {
   @include btnNav($grey, lighten( $grey, 10% ), 3px, 170px);
 }
 

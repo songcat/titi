@@ -102,6 +102,9 @@ header {
 .rslides_tabs {
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  margin-top: -50px;
+  z-index: 10;
   li {
     display: inline-block;
     margin-right: 15px;

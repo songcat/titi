@@ -532,6 +532,9 @@ header ul a {
 .rslides_tabs {
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  margin-top: -50px;
+  z-index: 10;
 }
 .rslides_tabs li {
   display: inline-block;

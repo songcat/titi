@@ -1,7 +1,7 @@
 @import "base/normalize";
 
 // variables
-$violet: #9754e2;
+$purple: #9754e2;
 $grey: #333;
 $lightGrey: #e5e5e5;
 $white: #fff;
@@ -42,7 +42,7 @@ html {
   background-attachment: fixed;
 }
 
-a%nav {
+%nav {
   transition: $trans;
   text-align: center;
   display: block;
@@ -66,10 +66,10 @@ header {
   h1 {
     float: left;
     font-size: 0;
-    background: url('../img/form/logo.png') center 5px $violet no-repeat;
+    background: url('../img/form/logo.png') center 5px $purple no-repeat;
     width: 230px;
     height: 65px;
-    border-bottom: 3px solid lighten( $violet, 10% );
+    border-bottom: 3px solid lighten( $purple, 10% );
   }
 
   ul {
@@ -84,13 +84,17 @@ header {
       margin-left: 5px;
     }
     a {
-      @include btnNav($violet, lighten($violet, 10%), 5px, 160px);
+      @include btnNav($purple, lighten($purple, 10%), 5px, 160px);
     }
   }
 }
 
 nav.menu a {
   @include btnNav($grey, lighten($grey, 10%), 3px, 170px);
+  
+  &.active {
+    border-color: $purple;
+  }
 }
 
 // slider
@@ -104,7 +108,7 @@ nav.menu a {
     display: inline-block;
     margin-right: 15px;
     &.rslides_here a {
-      background-color: $violet;
+      background-color: $purple;
     }
     a {
       font-size:0;

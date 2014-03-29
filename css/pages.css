@@ -515,6 +515,9 @@ nav.menu a {
   background-color: #333333;
   border-bottom: 3px solid #4d4d4d;
 }
+nav.menu a.active {
+  border-color: #9754e2;
+}
 
 .rslides_tabs {
   margin: 0 auto;

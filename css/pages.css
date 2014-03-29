@@ -509,6 +509,11 @@ header ul a {
   border-bottom: 3px solid #b280e9;
 }
 
+nav.menu {
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+}
 nav.menu a {
   padding: 3px 0;
   width: 170px;
@@ -517,6 +522,15 @@ nav.menu a {
 }
 nav.menu a.active {
   border-color: #9754e2;
+}
+nav.menu ul {
+  margin: 0;
+}
+nav.menu ul li {
+  display: inline-block;
+}
+nav.menu ul li + li {
+  margin-left: 15px;
 }
 
 .rslides_tabs {

@@ -89,11 +89,29 @@ header {
   }
 }
 
-nav.menu a {
-  @include btnNav($grey, lighten($grey, 10%), 3px, 170px);
-  
-  &.active {
-    border-color: $purple;
+nav.menu {
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+
+  a {
+    @include btnNav($grey, lighten($grey, 10%), 3px, 170px);
+
+    &.active {
+      border-color: $purple;
+    }
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      display: inline-block;
+    }
+
+    li + li {
+      margin-left: 15px;
+    }
   }
 }
 

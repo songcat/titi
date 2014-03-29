@@ -3,6 +3,7 @@
 // variables
 $purple: #9754e2;
 $grey: #333;
+$bgNavColor: #2c2c2c;
 $lightGrey: #e5e5e5;
 $white: #fff;
 
@@ -164,5 +165,22 @@ nav.menu {
     float: left;
     width: 100%;
     border: 0;
+  }
+}
+
+#container {
+  padding: 0 10px;
+  .col {
+    display: inline-block;
+    &.cLeft {
+      width: 42%;
+      margin-right: 2%;
+    }
+    &.cRight {
+      width: 55%;
+    }
+  }
+  h1 {
+
   }
 }

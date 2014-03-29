@@ -583,3 +583,17 @@ nav.menu ul li + li {
   width: 100%;
   border: 0;
 }
+
+#container {
+  padding: 0 10px;
+}
+#container .col {
+  display: inline-block;
+}
+#container .col.cLeft {
+  width: 42%;
+  margin-right: 2%;
+}
+#container .col.cRight {
+  width: 55%;
+}

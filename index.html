@@ -1,0 +1,126 @@
+<!doctype html>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Index - Nanashor</title>
+    <meta name="description" content="Nanashor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="nanashor icon" href="img/form/favico.png" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="css/pages.css"/>
+</head>
+<body class="index wrapper">
+    <header>
+        <nav>
+            <a href=""><h1>Nanashor</h1></a>
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Devenir partenaire</a></li>
+                <li><a href="">Item</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <ul class="rslides">
+            <li><a href=""><img src="img/content/slide1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/content/slide2.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/content/slide3.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/content/slide4.jpg" alt=""/></a></li>
+        </ul>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="" class="active">Accueil</a></li>
+            <li><a href="">Informations</a></li>
+            <li><a href="">Evénements</a></li>
+            <li><a href="">Forum</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="container">
+        <div class="col cLeft">
+            <article class="news">
+                <h1><em>Dernière</em> News</h1>
+
+                <img src="img/content/latestnew.jpg" alt=""/>
+                <div class="teaser">
+                    <p class="date"></p>
+                    <a href="" class="readMore">lire la suite</a>
+                </div>
+
+                <h2>This is a awesome headline</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur autem cumque dolor
+                    eligendi iusto provident quasi quidem quod unde. Asperiores culpa explicabo nobis obcaecati quaerat
+                    quisquam sed sint velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, autem
+                    corporis ea expedita explicabo laborum molestiae molestias officia perspiciatis porro quos repudiandae
+                    sapiente temporibus voluptates voluptatum. Esse in magni quam? Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aspernatur assumenda autem deleniti ducimus exercitationem fugit illo magnam nemo
+                    nihil nisi nulla odit omnis, optio possimus quasi sequi sint sit, tempore!</p>
+                <a class="btn">lire la suite</a>
+            </article>
+            <article class="event">
+                <h1><em>Prochain</em> Evénement</h1>
+                <img src="img/content/lyonesport.jpg" alt="">
+                <div class="detail">
+                    <h2>LAN LYON ESPORT #6</h2>
+                    <span class="date">Du 7 au 9 mars 2014</span>
+                    <p>Venez nous rendre visite !</p>
+                    <a class="btn">plus d'infos</a>
+                </div>
+            </article>
+        </div>
+        <div class="col cRight">
+            <aside class="stream">
+                <h1><em>Some</em> Title</h1>
+            </aside>
+            <div class="social logos">
+                <h1><em>Réseaux</em> Sociaux</h1>
+                <ul>
+                    <li><a href=""><img src="img/content/facebook.jpg" alt=""/></a></li>
+                    <li><a href=""><img src="img/content/twitter.jpg" alt=""/></a></li>
+                    <li><a href=""><img src="img/content/youtube.jpg" alt=""/></a></li>
+                </ul>
+            </div>
+            <div class="partner logos">
+                <h1><em>Nos</em> Partenaires</h1>
+                <ul>
+                    <li><img src="img/content/razer.jpg" alt=""/></li>
+                    <li><img src="img/content/overdose-of-games.jpg" alt=""/></li>
+                    <li><img src="img/content/dailymotion.jpg" alt=""/></li>
+                    <li><img src="img/content/rdesigns.jpg" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            <span>Designs par <a href="">R-Designs</a> | Codage par <a href="">Isiris</a></span>
+            Copyright © 2014 - 2015 - <a href="">Nanashor.com</a> - Tous droits réservés
+        </p>
+        <ul>
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a></li>
+        </ul>
+    </footer>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/responsiveslides.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.rslides').responsiveSlides ({
+                pager: true
+            })
+            $(".rslides").responsiveSlides();
+        });
+
+    </script>
+</body>
+</html>

@@ -49,6 +49,16 @@ a%nav {
   color: #fff;
 }
 
+@mixin btnNav($bgcolor, $bordercolor, $padding, $width)
+{
+  @extend %nav;
+  padding: $padding 0;
+  width: $width;
+  background-color: $bgcolor;
+  border-bottom: 3px solid $bordercolor;
+
+}
+
 header {
   height: 65px;
   background-color: $grey;
@@ -74,18 +84,13 @@ header {
       margin-left: 5px;
     }
     a {
-      @extend %nav;
-      padding: 5px 0;
-      width: 160px;
-      background-color: $violet;
-      border-bottom: 3px solid lighten( $violet, 10% );
+      @include btnNav($violet, lighten( $violet, 10% ), 5px, 160px);
     }
   }
 }
 
 nav a {
-  @extend %nav;
-  background-color: $grey;
+  @include btnNav($grey, lighten( $grey, 10% ), 3px, 170px);
 }
 
 // slider

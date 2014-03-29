@@ -1,4 +1,5 @@
 @import "base/normalize";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 
 // variables
 $purple: #9754e2;
@@ -7,8 +8,7 @@ $bgNavColor: #2c2c2c;
 $lightGrey: #e5e5e5;
 $white: #fff;
 
-$arial: Arial, sans-serif;
-$helvetica: Helvetica, arial, sans-serif;
+$openCondensed: 'Open Sans Condensed', arial, sans-serif;
 
 $trans: all 0.5s ease-in-out;
 
@@ -31,6 +31,10 @@ a {
   &:hover {
     opacity: 0.7;
   }
+}
+
+img {
+  max-width: 100%;
 }
 
 ul a {
@@ -169,7 +173,7 @@ nav.menu {
 }
 
 #content {
-  padding: 0 10px;
+  padding: 10px;
   .col {
     float: left;
     &.cLeft {
@@ -180,8 +184,34 @@ nav.menu {
       width: 55%;
     }
   }
-  h1 {
 
+  h1 {
+    color: $purple;
+    font-size: 2.143em;
+    font-family: $openCondensed;
+    em {
+      font-weight: 300;
+      margin-right: 5px;
+    }
+    span {
+      display: inline-block;
+      background-color: $white;
+      padding-right: 1em;
+    }
+    &:after {
+      height: 22px;
+      background-color: $lightGrey;
+      display: block;
+      margin-top: -32px;
+      content: "";
+    }
   }
+
+  iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+  }
+
 }
 

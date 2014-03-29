@@ -46,10 +46,17 @@
             <article class="news">
                 <h1><em>Dernière</em> News</h1>
 
-                <img src="img/content/latestnew.jpg" alt=""/>
-                <div class="teaser">
-                    <p class="date"></p>
-                    <a href="" class="readMore">lire la suite</a>
+                <div class="thumbnail">
+                    <img src="img/content/latestnew.jpg" alt=""/>
+                    <div class="infos">
+                        <p class="date">
+                            <strong>
+                                25
+                            </strong>
+                            jan
+                        </p>
+                        <a href="" class="readMore">lire la suite</a>
+                    </div>
                 </div>
 
                 <h2>This is a awesome headline</h2>
@@ -119,6 +126,7 @@
                 pager: true
             })
             $(".rslides").responsiveSlides();
+            $(".slider").css('height',$(".rslides").height());
         });
     </script>
 </body>

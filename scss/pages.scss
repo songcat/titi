@@ -42,6 +42,13 @@ html {
   background-attachment: fixed;
 }
 
+a%nav {
+  transition: $trans;
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+
 header {
   height: 65px;
   background-color: $grey;
@@ -57,24 +64,29 @@ header {
 
   ul {
     float: right;
+    margin-top: 16px;
     margin-bottom: 0;
     li {
       display: inline-block;
       margin-right: 10px;
     }
+    li + li {
+      margin-left: 5px;
+    }
     a {
-      transition: $trans;
-      text-align: center;
-      display: block;
-      padding: 7px 0;
+      @extend %nav;
+      padding: 5px 0;
       width: 160px;
-      color: #fff;
       background-color: $violet;
       border-bottom: 3px solid lighten( $violet, 10% );
     }
   }
 }
 
+nav a {
+  @extend %nav;
+  background-color: $grey;
+}
 
 // slider
 .rslides_tabs {

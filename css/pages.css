@@ -471,6 +471,13 @@ html {
   background-attachment: fixed;
 }
 
+header ul a, nav a {
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+
 header {
   height: 65px;
   background-color: #333333;
@@ -485,21 +492,25 @@ header h1 {
 }
 header ul {
   float: right;
+  margin-top: 16px;
   margin-bottom: 0;
 }
 header ul li {
   display: inline-block;
   margin-right: 10px;
 }
+header ul li + li {
+  margin-left: 5px;
+}
 header ul a {
-  transition: all 0.5s ease-in-out;
-  text-align: center;
-  display: block;
-  padding: 7px 0;
+  padding: 5px 0;
   width: 160px;
-  color: #fff;
   background-color: #9754e2;
   border-bottom: 3px solid #b280e9;
+}
+
+nav a {
+  background-color: #333333;
 }
 
 .rslides_tabs {

@@ -495,6 +495,12 @@ header h1 {
   height: 65px;
   border-bottom: 3px solid #b280e9;
 }
+@media (max-width: 779px) {
+  header h1 {
+    margin: 0 auto;
+    float: none;
+  }
+}
 header ul {
   float: right;
   margin-top: 16px;
@@ -529,6 +535,11 @@ nav.menu a {
 }
 nav.menu a.active {
   border-color: #9754e2;
+}
+@media (max-width: 960px) and (min-width: 780px) {
+  nav.menu a {
+    width: 120px;
+  }
 }
 nav.menu ul {
   margin: 0;
@@ -604,6 +615,15 @@ nav.menu ul li + li {
 #content .col.cRight {
   width: 55%;
 }
+@media (max-width: 779px) {
+  #content .col {
+    float: none;
+  }
+  #content .col.cLeft, #content .col.cRight {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 #content h1 {
   color: #9754e2;
   font-size: 2.143em;
@@ -637,6 +657,11 @@ nav.menu ul li + li {
 #content .logos li + li {
   margin-left: 10%;
 }
+@media (max-width: 960px) and (min-width: 780px) {
+  #content .logos li {
+    width: 25%;
+  }
+}
 #content .partner li:nth-child(2n+1) {
   clear: both;
   margin-left: 0;
@@ -644,6 +669,11 @@ nav.menu ul li + li {
 }
 #content .partner li:nth-child(2n) {
   float: right;
+}
+@media (max-width: 960px) and (min-width: 780px) {
+  #content .partner li {
+    width: 45%;
+  }
 }
 #content iframe {
   width: 100%;

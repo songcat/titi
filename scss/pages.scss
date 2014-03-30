@@ -61,7 +61,7 @@ html {
   width: $width;
   background-color: $bgcolor;
   border-bottom: 3px solid $bordercolor;
-
+  text-decoration: none;
 }
 
 header {
@@ -95,7 +95,7 @@ header {
 }
 
 nav.menu {
-  background-color: black;
+  background-color: $bgNavColor;
   text-align: center;
   padding: 10px 0;
 
@@ -240,6 +240,114 @@ nav.menu {
     height: 300px;
   }
 
+  .news {
+    h2 {
+      border-bottom: 1px solid $grey;
+      font-family: $openCondensed;
+      font-weight: 500;
+      font-size: 2.143em;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 0.857em;
+    }
+
+    .thumbnail {
+      position: relative;
+
+      img {
+        display: block;
+      }
+
+      .infos {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        right: 0;
+        border-left: 3px solid $purple;
+        height: 100%;
+        width: 20%;
+
+        p {
+          height: 55%;
+          border-bottom: 1px solid;
+          border-color: rgba(255, 255, 255, 0.1);
+          text-align: right;
+          margin: 0;
+          text-transform: uppercase;
+          padding-top: 15%;
+          padding-right: 30%;
+          color: $white;
+          font-size: 2.143em;
+          line-height: 1;
+          font-family: $openCondensed;
+
+          strong {
+            display: block;
+          }
+        }
+        .readMore {
+          display: block;
+          height: 45%;
+          background: url('../img/form/readmore.png') center no-repeat;
+          font-size: 0;
+        }
+      }
+    }
+
+    .btn {
+      @include btnNav($purple, lighten($purple, 10%), 5px, 160px);
+      border: none;
+      margin: 0 auto;
+    }
+  }
+
+  .event {
+    .content {
+      img {
+        float: left;
+        margin-right: 15px;
+      }
+
+      .detail {
+        background: url('../img/content/bgevent.jpg');
+        height: 125px;
+
+        span, h2 {
+          font-size: 1.7em;
+          font-family: $openCondensed;
+        }
+
+        span {
+          line-height: 1;
+          text-transform: uppercase;
+          color: $white;
+          font-weight: bold;
+        }
+
+        h2 {
+          color: black;
+          padding-top: 5px;
+          margin-bottom: 0;
+        }
+
+        p {
+          margin: 0;
+          color: darken($purple, 20%);
+        }
+
+        .btn {
+          @include btnNav($purple, lighten($purple, 10%), 5px, 160px);
+          border: none;
+          display: inline-block;
+          margin-left: -20px;
+        }
+
+      }
+    }
+  }
 }
 
 footer {
